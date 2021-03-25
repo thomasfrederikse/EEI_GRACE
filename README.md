@@ -20,7 +20,7 @@ The script `Budget_GRACE_main.py` calls all the routines that do the actual comp
    NetCDF file with gridded estimates of ocean mass, steric sea level, geocentric sea level, and relative sea level. All units are in mm. Multiple free software packages are available to view and modify NetCDF files. For example [python](https://unidata.github.io/netcdf4-python/), [Julia](https://github.com/Alexander-Barth/NCDatasets.jl), [GMT](https://www.generic-mapping-tools.org/), [ncview](http://meteora.ucsd.edu/~pierce/ncview_home_page.html), and many others. 
 
 ### `trends_global.xlsx`
-	Excel sheets with linear trends in sea level, ocean heat content and the EEI over various periods. Each period has its own tab. 
+   Excel sheets with linear trends in sea level, ocean heat content and the EEI over various periods. Each period has its own tab. 
  
 ### `timeseries_global.xlsx`
    Excel sheets with time series of all components of the global sea-level budget, ocean heat content, and ocean heat uptake. For each quantity for which uncertainty estimates are available, the first column denotes the lower bound (5th percentile), the second column the best estimate, and the third column the upper bound (95th percentile). For sea level, the units are in mm. For OHC (second tab), the units are Joules, and for OHU, the units are in W/m^2. 
