@@ -96,6 +96,11 @@ def compute_steric_indiv():
         for i in steric_indiv:
             for j in ['thermosteric','halosteric','ohc']:
                 steric_indiv[i][j]['trend'] = trend_stats(steric_indiv[i][j]['tseries'])
+        steric_indiv['mask'] = {}
+        steric_indiv['mask']['lon'] = lon
+        steric_indiv['mask']['lat'] = lat
+        steric_indiv['mask']['slm_glb'] = mask_global_interp
+        steric_indiv['mask']['slm_alt'] = mask_global_interp
         steric[prod] = steric_indiv
     return(steric)
 

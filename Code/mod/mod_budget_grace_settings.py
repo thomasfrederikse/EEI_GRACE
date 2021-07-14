@@ -12,7 +12,7 @@ def init():
     settings['startyear'] = 2003
     settings['stopyear']  = 2019
     settings['ens_start'] = 0
-    settings['ens_stop']  = 5000
+    settings['ens_stop']  = 100
     settings['ens_range'] = np.arange(settings['ens_start'],settings['ens_stop'])
     settings['num_ens']   = len(settings['ens_range']) # Number of Monte Carlo samples
     settings['steric_products'] = ['EN4_l09','EN4_g10','I17','CZ16','WOA','SIO','JAMSTEC','BOA']
@@ -49,14 +49,14 @@ def init():
     settings['fn_altimetry']   = settings['dir_data'] + 'Altimetry/CDS/CDS_monthly_2003_2019.nc'
 
     # Read Steric data
-    settings['fn_EN4_l09'] = settings['dir_data'] + 'Steric/EN4/EN4_L09_1950_2020.nc'
-    settings['fn_EN4_g10'] = settings['dir_data'] + 'Steric/EN4/EN4_G10_1950_2020.nc'
-    settings['fn_I17']     = settings['dir_data'] + 'Steric/I17/I17_1955_2019.nc'
-    settings['fn_CZ16']    = settings['dir_data'] + 'Steric/Cheng/Cheng_1940_2020.nc'
-    settings['fn_WOA']     = settings['dir_data'] + 'Steric/Levitus/Levitus_2005_2019.nc'
+    settings['fn_EN4_l09'] = settings['dir_data'] + 'Steric/EN4/l09/EN4_l09_1955_2020.nc'
+    settings['fn_EN4_g10'] = settings['dir_data'] + 'Steric/EN4/g10/EN4_g10_1955_2020.nc'
+    settings['fn_I17']     = settings['dir_data'] + 'Steric/I17/I17_1955_2020.nc'
+    settings['fn_CZ16']    = settings['dir_data'] + 'Steric/CZ16/CZ16_1940_2020.nc'
+    settings['fn_WOA']     = settings['dir_data'] + 'Steric/Levitus/Levitus_2005_2020.nc'
     settings['fn_SIO']     = settings['dir_data'] + 'Steric/SIO/SIO_2004_2020.nc'
     settings['fn_JAMSTEC'] = settings['dir_data'] + 'Steric/JAMSTEC/JAMSTEC_2001_2020.nc'
-    settings['fn_BOA']     = settings['dir_data'] + 'Steric/BOA/BOA_2004_2019.nc'
+    settings['fn_BOA']     = settings['dir_data'] + 'Steric/BOA/BOA_2004_2020.nc'
 
     # Read/write EEI/non-ocean terms
     settings['fn_EEI_GCOS']     = settings['dir_data'] + 'Steric/GCOS/GCOS_all_heat_content_1960-2018_ZJ_v22062020.nc'

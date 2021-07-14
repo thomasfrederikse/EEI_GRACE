@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Write GMT scripts for compare_alt_grace.pdf
+# Write GMT scripts for mass_alt_comp.pdf
 # ---
 # Altimetry estimates
 # - NASA measures (Our estimate)
